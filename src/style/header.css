@@ -1,0 +1,112 @@
+/* ==================== nav */
+.nav a{
+    margin-right: 18px;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+
+/* ===============  hover  */
+
+.nav a:hover{
+    color: var(--danger);
+}
+/* ==================== nav end  */
+
+/* ============== active nav  */
+.active_menu{
+    color: #f1646c !important;
+}
+/* ============== active nav  end  */
+
+
+/* ================= rightNav start */
+.rightNav span{
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--white);
+    margin-right: 10px;
+}
+
+/* ================== cart  */
+.cart_icon{
+    position: relative;
+}
+.cart_icon .cart_badge{
+    position: absolute;
+    top: -8px;
+    left: 14px;
+    background: var(--danger);
+    color: var(--white);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ================== cart  end  */
+
+/* ================= mobile_menu  */
+.mobile_menu{
+    display: none;
+}
+/* ================= mobile_menu  end  */
+
+/* ================= rightNav end */
+
+
+/* ======================responciv ness */
+@media(max-width:768px){
+    /* ============ header  */
+    .header{
+        position: relative;
+    }
+    /* ============ header  end  */
+
+    /* ======================= mobile menu */
+    .mobile_menu{
+        display: inline-block;
+    }
+
+    .navigation{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,0.534);
+        z-index: 99;
+        display: none;
+        transition: 0.4s ;
+    }
+
+    .navigation .nav{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        line-height: 25px;
+    }
+    .nav a{
+        font-size: .9rem;
+        margin-top: 2rem;
+        color: var(--dark);
+    }
+
+    /* ============== show menu */
+    .show_menu{
+        display: block;
+    }
+}
+/* ======================responciv ness  end */

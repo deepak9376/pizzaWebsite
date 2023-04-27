@@ -1,0 +1,121 @@
+/* ================== hero section  style  */
+.home{
+    flex-wrap: wrap;
+}
+
+/* ====================== content hero  */
+.content{
+    padding-top: 80px;
+}
+
+.hero_title span{
+    background: linear-gradient(90deg, #00dbde ,#fc00ff);
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    /* font-size: 20px; */
+}
+/* ====================== content hero  end */
+
+/* ================ image  */
+.hero_image {
+    width: 90%;
+}
+.hero_image img{
+    width: 100%;
+    
+   
+}
+/* ================ image  end  hero  */
+
+
+/* =================== button  */
+.all_foods-btn a{
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #03a9f4 , #f441a5 , #ffeb3b , #03a9f4);
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    background-size: 400%;
+    border-radius: 30px;
+    font-family: 'Roboto';
+}
+
+.all_foods-btn a:hover{
+    animation:  animate 8s linear infinite;
+    color: var(--white);
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+/* =================== button  end   */
+/* ================== hero section  style  end  */
+
+
+
+/* ========================= service start  */
+.service span{
+    color: var(--dark-orange);
+    font-weight: 900;
+}
+
+/* =================== button food-category */
+.food-category button{
+    background: linear-gradient(90deg, #03a9f4 , #f441a5 , #ffeb3b , #03a9f4);
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-size: 400%;
+}
+.food-category button:hover{
+    animation:  animate 8s linear infinite;
+    color: var(--white);
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+/* =================== button food-category end  */
+/* ========================= service end   */
+
+
+/* ============== respponciv ness  */
+@media(max-width:991px){
+   /* ======================= home responciv  */
+   .home-content
+   {
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       margin: 20px  0;
+    
+   }
+   .content{
+       padding-top: 0;
+       margin-bottom: 3rem;
+       width: 100%;
+   }
+   /* ======================= home responciv  end  */
+}
+/* ============== respponciv ness  end  */

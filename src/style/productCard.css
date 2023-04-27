@@ -1,0 +1,36 @@
+/* ===================== product  start */
+.product{
+    background: #fff;
+    border-radius: 20px;
+    
+}
+/* =============== product end  */
+/* ===================== btn add to cart  */
+.addBtn{
+    background: linear-gradient(90deg, #03a9f4 , #f441a5 , #ffeb3b , #03a9f4);
+    width: 150px;
+    padding: 4px;
+    border-radius: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 12px;
+    background-clip: 200%;
+    text-align: center;
+    
+}
+
+/*  ==================== end  */
+
+
+/* ================ responciv  */
+@media(max-width:768px){
+    .product p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .addBtn{
+        width: 100px;
+    }
+}
+/* ================ responciv  end  */
